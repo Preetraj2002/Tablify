@@ -12,7 +12,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Tablify.git
+   git clone https://github.com/Preetraj2002/Tablify.git
    cd Tablify
    ```
 
