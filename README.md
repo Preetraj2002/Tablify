@@ -48,7 +48,7 @@
    After setting up, simply run the script on your image:
 
    ```bash
-   python snap_table.py path/to/your/image.jpg
+   python tablify.py path/to/your/image.jpg
    ```
 
    This will generate a `output.csv` file in the same directory.
@@ -61,25 +61,25 @@
    The image is converted to grayscale, and a binary thresholding is applied to make the text clearer for OCR.
 
    Original:
-   ![Original](image_csv.jpeg)
+   ![Original](images/image_csv.jpeg)
 
    Grayscale:
-   ![Gray](gray_image.png)
+   ![Gray](images/gray_image.png)
 
    After OTSU thresholding:
-   ![Thresholded_image](thresholded_image.png)
+   ![Thresholded_image](images/thresholded_image.png)
 
    Dilation:
-   ![Dilation](dilation.png)
+   ![Dilation](images/dilation.png)
    
 2. **Contour Detection:**
    Using OpenCV, contours of the text blocks are identified to group text into rows and columns.
 
    Marked Countours:
-   ![Countours](countours.png)
+   ![Countours](images/countours.png)
 
    Marked Centroids of the countours:
-   ![centroids](centroids_with_labels.png)
+   ![centroids](images/centroids_with_labels.png)
    
 3. **Text Extraction:**
    Each text block is processed with `pytesseract` to extract the text, which is then organized into a structured CSV format.
